@@ -1,2 +1,1 @@
-Unfortunately I don't know Docker very well :(
-    
+Мій проєкт для DevChallenge 2023
