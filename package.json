@@ -1,0 +1,29 @@
+{
+  "name": "devchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:calculate": "mocha ./controller/calculate.test.js",
+    "test:DB": "mocha ./controller/DB/DB.test.js",
+    "test:index": "mocha ./index.test.js",
+    "test:linc":"mocha ./controller/lincController.test.js",
+
+    "test": "npm run test:calculate && npm run test:DB && npm run test:index && npm run test:linc",
+    "start":"npm test && node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Anonimus",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mathjs": "^11.11.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1",
+    "chai": "^4.3.10"
+  }
+}
