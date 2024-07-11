@@ -52,7 +52,6 @@ const calculatePost = (req, res) => {
 const getCell = async (req, res) => {
     try {
         let { sheet_id, cell_id } = req.params;
-        console.log("1");
         sheet_id = sheet_id.toLowerCase()
         cell_id = cell_id.toLowerCase()
 
